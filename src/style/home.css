@@ -1,0 +1,139 @@
+.home-bg {
+    background-image: url("../../assets/home/background-home-desktop.jpg");
+}
+
+.container {
+    padding-top: 50px;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.textbox {
+    width: 450px;
+}
+
+.headline {
+    text-transform: uppercase;
+    font-family: "bellefair";
+    font-size: 150px;
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+.para1 {
+    font-family: Cambria;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.para2 {
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.explore {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    width: 274px;
+    height: 274px;
+    border-radius: 100%;
+    font-family: bellefair;
+    font-size: 32px;
+    text-transform: uppercase;
+    border-width: 0;
+}
+
+@keyframes anim {
+    0% {
+        scale: 1.02;
+
+    }
+
+    25% {
+        scale: 1.04;
+    }
+
+    50% {
+        scale: 1.08;
+    }
+
+    100% {
+        scale: 1.12;
+    }
+}
+
+.explore:hover {
+    animation-name: anim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .home-bg {
+        background-image: url("../../assets/home/background-home-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .background {
+        overflow: scroll;
+    }
+
+    .headline {
+        font-size: 80px;
+    }
+
+    .para1 {
+        font-size: 16px;
+    }
+
+    .para2 {
+        font-size: 15px;
+    }
+
+    .textbox {
+        width: 300px;
+    }
+
+    .explore {
+        margin-top: 50px;
+        width: 234px;
+        height: 234px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width: 1024px) {
+    .home-bg {
+        background-image: url("../../assets/home/background-home-tablet.jpg");
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .headline {
+        padding: 0px 0px;
+    }
+
+    .explore {
+        margin-top: 50px;
+        width: 234px;
+        height: 234px;
+        font-size: 24px;
+    }
+
+
+}

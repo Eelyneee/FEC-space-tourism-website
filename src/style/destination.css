@@ -1,0 +1,202 @@
+.dest-bg {
+    background-image: url("../../assets/destination/background-destination-desktop.jpg");
+}
+
+.dest-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dest-textbox {
+    max-width: 450px;
+}
+
+.dest-title::before {
+    content: '01';
+    color: gray;
+}
+
+.dest-title {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-family: barlow;
+    padding: 50px 0px 50px 150px;
+}
+
+
+.dest-name {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+.dest-description {
+    font-family: 'Gill Sans';
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.dest-subbox1 {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Segoe UI';
+}
+
+.dest-subbox1-text {
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.dest-subbox2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.dest-description::after {
+    content: '';
+    width: 100%;
+    border-bottom: solid 1px #fff;
+    z-index: 1;
+}
+
+.dest-margin {
+    margin: 0px 70px 0px 0px;
+}
+
+.dest-subhead2 {
+    font-family: barlow;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.dest-subcontent {
+    font-family: bellfair;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.dest-active {
+    border-bottom: 2px #fff solid;
+}
+
+@media screen and (max-width: 480px) {
+
+    .dest-bg {
+        background-image: url("../../assets/destination/background-destination-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .dest-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dest-title {
+        font-size: 16px;
+        padding: 50px 0px 50px 0px;
+        text-align: center;
+    }
+
+    .dest-textbox {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dest-subbox1 {
+        justify-content: center;
+    }
+
+    .dest-subbox1-text {
+        font-size: 14px;
+    }
+
+    .dest-name,
+    .dest-description {
+        text-align: center;
+    }
+
+    .dest-name {
+        font-size: 50px;
+    }
+
+    .dest-description {
+        font-size: 15px;
+        max-width: 300px;
+    }
+
+    .dest-subbox2 {
+        text-align: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .dest-margin {
+        margin: 0px 0px 30px 0px;
+    }
+
+    .dest-subcontent {
+        font-size: 28px;
+    }
+
+
+    .dest-img {
+        max-width: 50%;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media screen and (min-width:480px) and (max-width: 1024px) {
+
+    .dest-bg {
+        background-image: url("../../assets/destination/background-destination-tablet.jpg");
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .dest-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dest-title {
+        padding: 50px 0px 50px 0px;
+        text-align: center;
+    }
+
+
+    .dest-textbox {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dest-subbox1 {
+        justify-content: center;
+    }
+
+    .dest-name,
+    .dest-description {
+        text-align: center;
+    }
+
+    .dest-subbox2 {
+        text-align: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .dest-margin {
+        margin: 0px 0px 30px 0px;
+    }
+
+}
